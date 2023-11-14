@@ -1,0 +1,86 @@
+header {
+    height: 8svh;
+    width: 100%;
+    background-color: var(--color-two);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header svg {
+    height: 5svh;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    fill: none;
+}
+
+.logo svg path {
+    stroke: var(--color-five);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.search input {
+    background-color: transparent;
+    color: var(--color-five);
+    padding: 5px 10px 5px 15px;
+    border: 2.7px solid var(--color-five);
+    border-radius: 50px;
+    width: 500px;
+    font: var(--main-font);
+}
+
+.search input::placeholder {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-four);
+    background: url("/assets/svgs/magnifyingGlass.svg");
+    background-repeat: no-repeat;
+    background-position: 1.5em;
+    background-size: 1.2rem;
+}
+
+.search input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='antiquewhite'><path d='M23.071,20.243c0.781,0.781,0.781,2.047,0,2.828s-2.047,0.781-2.828,0L16,18.828l-4.243,4.243c-0.781, 0.781-2.047, 0.781-2.828, 0s-0.781-2.047, 0-2.828L13.172, 16l-4.243-4.243c-0.781-0.781-0.781-2.047, 0-2.828 s2.047-0.781, 2.828, 0L16, 13.172l4.243-4.243c0.781-0.781, 2.047-0.781, 2.828, 0s0.781, 2.047, 0, 2.828L18.828, 16L23.071, 20.243z'/></svg>");
+
+    }
+
+    .headerRight {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .cart svg {
+        fill: var(--color-five);
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 3.5svh;
+        align-items: center;
+    }
+
+    .menu div {
+        height: 15%;
+        width: 40px;
+        border-radius: 50px;
+        background-color: var(--color-five);
+    }
