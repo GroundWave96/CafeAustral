@@ -1,0 +1,25 @@
+.cards {
+    height: 17svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-five);
+    margin: 0 200px;
+}
+
+.card {
+    /* border: 2px solid var(--color-five); */
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    align-items: center;
+}
+
+.cardIcon{
+    font-size: 2rem;
+    border: 2px solid var(--color-five);
+    border-radius: 500px;
+    padding: 15px;
+}

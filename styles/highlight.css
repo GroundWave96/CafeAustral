@@ -1,0 +1,70 @@
+.highligh {
+    background-color: var(--color-one);
+    height: 92svh;
+    display: flex;
+}
+
+.highlighTitle {
+    text-align: center;
+    color: var(--color-two);
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: 600;
+}
+
+.carouselProducts {
+    margin: 0 100px 50px 100px;
+}
+
+.slideProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slideProducts img {
+    height: 250px;
+    width: 250px;
+}
+
+.slideProducts h3 {
+    color: var(--color-two);
+    font-size: 1.5rem;
+}
+
+.price {
+    text-align: left;
+}
+
+.slideProducts h4 {
+    color: var(--color-two);
+    font-size: 1.3rem;
+}
+
+.slideProducts h5 {
+    color: var(--color-two);
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.slideProducts a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-five);
+    border: 2px solid var(--color-two);
+    border-radius: 50px;
+    padding: 10px 15px;
+    background-color: var(--color-two);
+    transition: all 0.3s;
+}
+
+.slideProducts a:hover {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-two);
+    border: 2px solid var(--color-two);
+    border-radius: 50px;
+    padding: 10px 15px;
+    background-color: var(--color-five);
+}

@@ -1,0 +1,127 @@
+footer {
+    display: flex;
+    background-color: var(--color-two);
+    justify-content: space-around;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.footerLogo {
+    width: 250px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--color-five);
+}
+
+.socialButton{
+    transition: all 0.3s;
+}
+
+.uil-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.uil-facebook:hover {
+    color: #1877F2;
+}
+
+.uil-twitter:hover {
+    color: #1DA1F2;
+}
+
+.uil-youtube:hover {
+    color: #FF0000;
+}
+
+.uil-whatsapp:hover {
+    color: #25D366;
+}
+
+.uil-linkedin:hover {
+    color: #0077b5;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 270px;
+    gap: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter h2{
+    font-size: 1.5rem;
+    color: var(--color-five);
+    margin-bottom: 10px;
+}
+
+.input-group {
+    position: relative;
+    font-size: 1rem;
+}
+
+.input-group .input {
+    all: unset;
+    color: var(--color-five);
+    padding: 10px;
+    border: 2px solid var(--color-one);
+    border-radius: 10px;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 90%;
+}
+
+.input-group .label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color-one);
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-group .input:focus {
+    border: 2px solid var(--color-five);
+}
+
+.input-group .input:is(:focus, :valid) ~ label {
+    transform: translateY(-140%) scale(0.7);
+    background-color: var(--color-two);
+    padding-inline: 0.3rem;
+    color: var(--color-five);
+}
+
+.newsletter button {
+    border: 2px solid var(--color-one);
+    border-radius: 10px;
+    background-color: var(--color-three);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    font-family: var(--main-font);
+    color: var(--color-one);
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    border: 2px solid var(--color-one);
+    background-color: var(--color-one);
+    color: var(--color-four);
+}
