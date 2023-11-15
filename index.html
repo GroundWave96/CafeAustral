@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Austral</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="prevent-select">
         <div class="headerLeft">
-            <a href="index.html" class="logo">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M4 20H10.9433M10.9433 20H11.0567M10.9433 20C10.9622 20.0002 10.9811 20.0002 11 20.0002C11.0189 20.0002 11.0378 20.0002 11.0567 20M10.9433 20C7.1034 19.9695 4 16.8468 4 12.9998V8.92285C4 8.41305 4.41305 8 4.92285 8H17.0767C17.5865 8 18 8.41305 18 8.92285V9M11.0567 20H18M11.0567 20C14.8966 19.9695 18 16.8468 18 12.9998M18 9H19.5C20.8807 9 22 10.1193 22 11.5C22 12.8807 20.8807 14 19.5 14H18V12.9998M18 9V12.9998M15 3L14 5M12 3L11 5M9 3L8 5" />
-                </svg>
-            </a>
+            <a class="headerLogo" href="index.html"><img src="assets/imgs/Logo.png" alt="Logo do Café Austral"></a>
         </div>
         <div class="search">
             <input type="search" placeholder="O que você procura?">
         </div>
         <div class="headerRight">
+            <a href="#" class="user">
+                <i class="uil uil-user"></i>
+            </a>
             <a href="#" class="cart">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M10.62,14l-1,2H19a1,1,0,0,1,0,2H9.62a2,2,0,0,1-1.79-2.89L8.9,13,5.32,4H3A1,1,0,0,1,3,2H5.32A2,2,0,0,1,7.18,3.26L7.88,5H20.8l.09,0a1,1,0,0,1,.48.05,1,1,0,0,1,.56,1.3l-2.8,7a1,1,0,0,1-.93.63Zm-.12,5A1.5,1.5,0,1,0,12,20.5,1.5,1.5,0,0,0,10.5,19Zm6,0A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                </svg>
+                <i class="uil uil-shopping-bag"></i>
             </a>
             <a href="#" class="menu">
                 <div class="line1"></div>
@@ -38,6 +38,191 @@
         </div>
     </header>
 
+    <section class="main">
+        <div class="carousel" style="background-color: var(--color-three);">
+            <div class="swiper mainCarousel"
+                style="width: 100%; height: 65svh; --swiper-pagination-color: var(--color-five); --swiper-navigation-color: var(--color-five);">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"
+                        style="text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/imgs/coffee1.jpg" alt="coffee"
+                            style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="swiper-slide"
+                        style="text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/imgs/coffee2.jpg" alt="coffee"
+                            style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="swiper-slide"
+                        style="text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/imgs/coffee3.jpg" alt="coffee"
+                            style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="swiper-slide"
+                        style="text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/imgs/coffee4.jpg" alt="coffee"
+                            style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <i class="cardIcon uil uil-truck"></i>
+                <p>Entrega rápida e eficaz para todo Brasil</p>
+            </div>
+            <div class="card">
+                <i class="cardIcon uil uil-credit-card"></i>
+                <p>Pagamento no crédito em até 6x sem juros</p>
+            </div>
+            <div class="card">
+                <i class="cardIcon fa-brands fa-pix"></i>
+                <p>Pagamento rápido e seguro via Pix</p>
+            </div>
+            <div class="card">
+                <i class="cardIcon fa-solid fa-headset"></i>
+                <p>Tire dúvidas com nosso atendimento eficiente</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="highlight prevent-select">
+        <h1 class="highlighTitle">Produtos em destaque</h1>
+        <div class="carouselProducts ">
+            <div class="swiper products"
+                style="width: 100%; height: 500px; --swiper-pagination-color: var(--color-two); --swiper-navigation-color: var(--color-two);">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="swiper-slide slideProducts"
+                        style="text-align: center; font-size: 18px; background: var(--color-five); display: flex; justify-content: center; align-items: center;">
+                        <img src="/assets/imgs/PacoteCafe.png" alt="Pacote de Café">
+                        <h3>Pilão Intenso 500g</h3>
+                        <div class="price">
+                            <h5>De: <s>R$26,99</s></h5>
+                            <h4>Por: R$19,99</h4>
+                        </div>
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#top"><img class="footerLogo" src="assets/imgs/Logo.png" alt="Logo do Café Austral"></a>
+        <div class="social">
+            <div class="social1">
+                <a href="#"><i class="socialButton uil uil-facebook"></i></a>
+                <a href="#"><i class="socialButton uil uil-youtube"></i></a>
+                <a href="#"><i class="socialButton uil uil-whatsapp"></i></a>
+            </div>
+            <div class="social2">
+                <a href="#"><i class="socialButton uil uil-linkedin"></i></a>
+                <a href="#"><i class="socialButton uil uil-instagram"></i></a>
+                <a href="#"><i class="socialButton uil uil-twitter"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h2>Fique por dentro das novidades!</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input class="input" type="name" id="name" required>
+                    <label class="label" for="name">Nome</label>
+                </div>
+                <div class="input-group">
+                    <input class="input" type="email" id="email" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <button class="submit" type="submit">CADASTRAR</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 
