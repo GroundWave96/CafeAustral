@@ -7,7 +7,7 @@
 @import url(styles/footer.css);
 
 :root {
-    --main-font: 'Poppins', sans-serif ;
+    --main-font: 'Poppins', sans-serif;
     --color-one: #38220f;
     --color-two: #634832;
     --color-three: #967259;
@@ -52,7 +52,10 @@ body {
 }
 
 .prevent-select {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-  }
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}

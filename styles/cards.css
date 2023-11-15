@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.cardIcon{
+.cardIcon {
     font-size: 2rem;
     border: 2px solid var(--color-five);
     border-radius: 500px;

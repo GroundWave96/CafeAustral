@@ -70,7 +70,8 @@ header svg {
     font-size: 2.7rem;
 }
 
-.user, .cart {
+.user,
+.cart {
     color: var(--color-five);
 }
 
