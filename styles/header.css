@@ -23,6 +23,10 @@ header svg {
     height: 65px;
 }
 
+.search {
+    display: flex;
+}
+
 .search input {
     background-color: transparent;
     color: var(--color-five);
@@ -37,23 +41,26 @@ header svg {
     font-family: var(--main-font);
     font-size: 1rem;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
+    padding: 1rem;
     color: var(--color-four);
-    background: url("/assets/svgs/magnifyingGlass.svg");
-    background-repeat: no-repeat;
-    background-position: 1.5em;
-    background-size: 1.2rem;
 }
 
 .search input::-webkit-search-cancel-button {
     -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: -3px;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='antiquewhite'><path d='M23.071,20.243c0.781,0.781,0.781,2.047,0,2.828s-2.047,0.781-2.828,0L16,18.828l-4.243,4.243c-0.781, 0.781-2.047, 0.781-2.828, 0s-0.781-2.047, 0-2.828L13.172, 16l-4.243-4.243c-0.781-0.781-0.781-2.047, 0-2.828 s2.047-0.781, 2.828, 0L16, 13.172l4.243-4.243c0.781-0.781, 2.047-0.781, 2.828, 0s0.781, 2.047, 0, 2.828L18.828, 16L23.071, 20.243z'/></svg>");
 
+}
+
+.search button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    left: -55px;
+}
+
+.search svg {
+    height: 50px;
 }
 
 .headerRight {

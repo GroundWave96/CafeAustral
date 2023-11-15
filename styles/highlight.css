@@ -28,8 +28,12 @@
 }
 
 .slideProducts h3 {
+    display: flex;
     color: var(--color-two);
     font-size: 1.5rem;
+    height: 90px;
+    align-items: center;
+    padding: 1rem;
 }
 
 .price {
@@ -57,6 +61,7 @@
     padding: 10px 15px;
     background-color: var(--color-two);
     transition: all 0.3s;
+    margin: 1.4rem;
 }
 
 .slideProducts a:hover {

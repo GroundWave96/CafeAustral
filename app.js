@@ -18,7 +18,7 @@ var swiper = new Swiper(".mainCarousel", {
 
   var swiper = new Swiper(".products", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 0,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

@@ -118,6 +118,7 @@ footer {
     font-family: var(--main-font);
     color: var(--color-one);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .newsletter button:hover {
