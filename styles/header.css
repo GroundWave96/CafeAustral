@@ -1,5 +1,5 @@
 header {
-    z-index: 100;
+    z-index: 10;
     height: 8svh;
     width: 100%;
     background-color: var(--color-two);
@@ -59,8 +59,9 @@ header svg {
     left: -55px;
 }
 
-.search svg {
-    height: 50px;
+.fa-magnifying-glass{
+    color: var(--color-five);
+    font-size: 1.7rem;
 }
 
 .headerRight {
@@ -71,8 +72,13 @@ header svg {
 }
 
 .user,
-.cart {
+.cart,
+.magnifying-glass {
     color: var(--color-five);
+}
+
+.magnifying-glass {
+    display: none;
 }
 
 .menu {
@@ -88,4 +94,14 @@ header svg {
     width: 40px;
     border-radius: 50px;
     background-color: var(--color-five);
+}
+
+@media (max-width: 1250px) {
+    .magnifying-glass {
+        display: block;
+    }
+
+    .search {
+        display: none;
+    }
 }

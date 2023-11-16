@@ -73,3 +73,17 @@
     padding: 10px 15px;
     background-color: var(--color-five);
 }
+
+.carouselProducts .productsMobile {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    .carouselProducts .productsMobile {
+        display: block;
+    }
+
+    .carouselProducts .products {
+        display: none;
+    }
+}

@@ -27,7 +27,6 @@ body {
 
 .main {
     background-color: var(--color-three);
-    height: 82svh;
 }
 
 ::-webkit-scrollbar {

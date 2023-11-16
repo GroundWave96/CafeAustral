@@ -1,19 +1,21 @@
 .cards {
-    height: 17svh;
+    background-color: var(--color-three);
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: var(--color-five);
-    margin: 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem 2rem;
 }
 
 .card {
-    /* border: 2px solid var(--color-five); */
     border-radius: 10px;
     padding: 10px;
     display: flex;
     gap: 20px;
     width: 300px;
+    min-width: 200px;
     align-items: center;
 }
 
