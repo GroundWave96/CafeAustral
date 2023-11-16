@@ -128,3 +128,10 @@ footer {
     background-color: var(--color-one);
     color: var(--color-four);
 }
+
+@media (max-width: 950px) {
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

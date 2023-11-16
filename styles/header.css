@@ -105,3 +105,18 @@ header svg {
         display: none;
     }
 }
+
+@media (max-width: 500px) {
+    .headerRight {
+        font-size: 2rem;
+    }
+
+    .menu {
+        height: 3svh;
+    }
+    
+    .menu div {
+        height: 15%;
+        width: 30px;
+    }
+}

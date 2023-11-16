@@ -86,4 +86,19 @@
     .carouselProducts .products {
         display: none;
     }
+
+    .carouselProducts {
+        margin: 0 20px 50px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slideProducts img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .carouselProducts {
+        margin: 0 0 50px  0;
+    }
 }
