@@ -1,0 +1,19 @@
+.mainCarousel{
+    width: 100%;
+    height: 65svh;
+}
+
+@media (max-width: 500px) {
+    .mainCarousel{
+        height: 45svh;
+    }
+
+    
+    .mainCarousel .swiper-button-next {
+        padding-top: 5000px;
+    }
+
+    .mainCarousel .swiper-button-prev {
+        padding-top: 5000px;
+    }
+}
