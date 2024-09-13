@@ -1,5 +1,130 @@
-.helpContainer{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.helpContainer {
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpContainer section {
+    width: 70%;
+    background-color: var(--color-four);
+    border-radius: 10px;
+}
+
+.helpContainer summary {
+    padding: .7rem;
+    border-bottom: 1px solid var(--color-three);
+    color: var(--color-one);
+    cursor: pointer;
+}
+
+.helpContainer p {
+    text-align: justify;
+    color: var(--color-two);
+    margin: 1rem 2rem;
+}
+
+
+.helpContainer section details:last-of-type summary {
+    border-bottom: 0px;
+}
+
+summary {
+    transform: all .5s;
+}
+
+details {
+    transform: all .5s;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.helpCards {
+    width: 70%;
+    background-color: var(--color-four);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpCard {
+    background-color: var(--color-five);
+    border-radius: 10px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 270px;
+    cursor: pointer;
+    transition: scale .5s;
+}
+
+.helpCard:hover {
+    scale: 105%;
+}
+
+.cardTitle {
+    color: var(--color-one);
+    text-align: center;
+    background-color: var(--color-three);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardTitle i {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+.cardText {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.cardText p {
+    text-align: center;
+    margin: .5rem;
+}
+
+@media (max-width: 750px) {
+    .helpContainer section {
+        width: 95%;
+    }
+
+    .helpContainer p {
+        margin: .7rem;
+    }
+
+    .helpCards {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1450px) {
+    .helpCards {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .helpCard {
+        margin: 1rem;
+    }
 }
