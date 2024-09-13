@@ -228,9 +228,14 @@ body.menu-open .line3 {
         height: 3rem;
     }
 
+    .sidebar {
+        justify-content: space-around;
+        height: 92svh;
+    }
+
     .sidebar li {
-        margin: 5px 0;
         padding: 0;
+        margin-left: 0;
     }
 
     .sidebar a {
