@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto | Café Austral</title>
+    <link rel="icon" href="assets/imgs/cafeIcone.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/productPage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="prevent-select">
+        <div class="headerLeft">
+            <a class="headerLogo" href="index.html"><img src="assets/imgs/Logo.png" alt="Logo do Café Austral"></a>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="O que você procura?">
+            <button class="submit" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="headerRight">
+            <a href="#" class="magnifying-glass">
+                <i class="uil uil-search-alt"></i>
+            </a>
+            <a href="login.html" class="user">
+                <i class="uil uil-user"></i>
+            </a>
+            <a href="cart.html" class="cart">
+                <i class="uil uil-shopping-bag"></i>
+            </a>
+            <div href="#" class="menu-btn" onclick=showSidebar() id="menu-btn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="menu" id="menu">
+        <ul class="sidebar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Produtos</a></li>
+            <li><a href="help.html">Ajuda</a></li>
+            <li><a href="australGuide.html">Guia Austral</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-wrapper">
+        <div class="produtcContainer">
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container">
+                        <img src="/assets/imgs/Pacote00.png" alt="Pacote de Café">
+                    </div>
+                    <div class="hover-container">
+                        <div>
+                            <img src="/assets/imgs/Pacote00.png" alt="Pacote de Café">
+                        </div>
+                        <div>
+                            <img src="/assets/imgs/Pacote00.png" alt="Pacote de Café">
+                        </div>
+                        <div>
+                            <img src="/assets/imgs/Pacote00.png" alt="Pacote de Café">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <span class="product-name">Café Austral suave</span>
+                    <span class="product-price">R$ 19.99</span>
+                    <div class="product-rating">
+                        <div class="stars-container">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                        <span>(250 avaliações)</span>
+                        <div>
+                            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Excepturi minus modi molestias laudantium blanditiis iusto enim, consectetur tenetur
+                                debitis
+                                rem vel odit alias quia perferendis?</p>
+                            <div class="btn-groups">
+                                <button type="button" class="buy-now-btn">
+                                    <i class="fas fa-wallet"></i> Comprar
+                                    <button type="button" class="buy-now-btn"><i class="fas fa-wallet"></i>buy
+                                        now</button>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <a href="#top"><img class="footerLogo" src="assets/imgs/Logo.png" alt="Logo do Café Austral"></a>
+        <div class="social">
+            <div class="social1">
+                <a href="#"><i class="socialButton uil uil-whatsapp"></i></a>
+                <a href="#"><i class="socialButton uil uil-facebook"></i></a>
+                <a href="#"><i class="socialButton uil uil-youtube"></i></a>
+            </div>
+            <div class="social2">
+                <a href="#"><i class="socialButton uil uil-linkedin"></i></a>
+                <a href="#"><i class="socialButton uil uil-instagram"></i></a>
+                <a href="#"><i class="socialButton uil uil-twitter"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h2>Fique por dentro das novidades!</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input class="input" type="name" id="name" required>
+                    <label class="label" for="name">Nome</label>
+                </div>
+                <div class="input-group">
+                    <input class="input" type="email" id="email" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <button class="submit" type="submit">ASSINAR</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="appLogin.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
