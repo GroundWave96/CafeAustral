@@ -224,10 +224,12 @@ body.menu-open .line3 {
     }
 
     .menu a {
-        transition: all .5s;
         border-radius: 0;
         height: 3rem;
+        background-size: 100% 100%;
+        background-image: none;
     }
+    
 
     .sidebar {
         justify-content: space-around;
