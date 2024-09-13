@@ -31,3 +31,15 @@
     width: 15svw;
     margin-left: 2rem;
 }
+
+@media (max-width: 750px) {
+    .aboutText{
+        margin: 0 5svw;
+    }
+    .textImage{
+        flex-direction: column;
+    }
+    .textImage .imageAbout{
+        display: none;
+    }
+}
