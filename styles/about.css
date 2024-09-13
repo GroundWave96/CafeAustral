@@ -11,14 +11,22 @@
     margin: 0 15svw;
 }
 
-.aboutText .text{
+.text{
     text-indent: 4rem;
     text-align: justify;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    
 }
 
-.aboutText .title{
+.title{
     color: var(--color-three);
     text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .textImage{
