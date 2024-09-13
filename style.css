@@ -6,6 +6,9 @@
 @import url(styles/cards.css);
 @import url(styles/footer.css);
 @import url(styles/MainCarousel.css);
+@import url(styles/cart.css);
+@import url(styles/about.css);
+@import url(styles/help.css);
 
 :root {
     --main-font: 'Poppins', sans-serif;

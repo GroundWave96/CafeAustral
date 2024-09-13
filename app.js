@@ -84,3 +84,27 @@ var swiper = new Swiper(".productsMobile", {
     });
   }
 }); */
+
+const btnMobile = document.getElementById("menu-btn");
+const nav = document.getElementById("menu");
+const body = document.body;
+
+function toggleMenu(event) {
+  if (event.type == 'touchstart') event.preventDefault();
+
+  nav.classList.toggle('active');
+
+  body.classList.toggle('menu-open');
+}
+
+function closeMenu() {
+  if (nav.classList.contains('active')) {
+    nav.classList.remove('active');
+    body.classList.remove('menu-open');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
+nav.addEventListener('mouseleave', closeMenu);

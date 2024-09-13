@@ -1,0 +1,33 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15svw;
+}
+
+.aboutText .text{
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.aboutText .title{
+    color: var(--color-three);
+    text-align: left;
+}
+
+.textImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textImage .imageAbout{
+    width: 15svw;
+    margin-left: 2rem;
+}

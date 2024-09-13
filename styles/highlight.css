@@ -52,7 +52,7 @@
 
 .slideProducts a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-five);
     border: 2px solid var(--color-two);
@@ -64,7 +64,7 @@
 }
 
 .slideProducts a:hover {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-two);
     border: 2px solid var(--color-two);

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Austral</title>
+    <title>Login | Café Austral</title>
     <link rel="icon" href="assets/imgs/cafeIcone.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/login.css">
@@ -35,18 +35,27 @@
             <a href="login.html" class="user">
                 <i class="uil uil-user"></i>
             </a>
-            <a href="#" class="cart">
+            <a href="cart.html" class="cart">
                 <i class="uil uil-shopping-bag"></i>
             </a>
-            <a href="#" class="menu">
+            <div href="#" class="menu-btn" onclick=showSidebar() id="menu-btn">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </a>
+            </div>
         </div>
     </header>
+    <nav class="menu" id="menu">
+        <ul class="sidebar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Produtos</a></li>
+            <li><a href="help.html">Ajuda</a></li>
+            <li><a href="">Guia Austral</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+        </ul>
+    </nav>
 
-    <div class="container">
+    <div class="loginContainer">
         <img class="icon-background" src="assets/imgs/cafeIconeBackground.png" alt="">
         <div class="overflow">
             <div class="wrapper">
